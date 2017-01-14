@@ -1,0 +1,55 @@
+ignore:
+  id:
+    - title_bar_back_button
+    - social_search_back_button
+    - itemDevider
+    - back_press
+    - bt_back
+    - h5_tv_nav_back
+    - h5_lv_nav_back
+    - close
+    - sepelateLine
+    - title_bar_left_line
+    - title_bar_title
+    - bill_icon
+    - bill
+    - contact_button
+    - search_button
+    - search_voice
+    - saoyisao-iv
+    - saoyisao_tv
+    - launcher_title_search_item_button
+
+  classes:
+    - android.widget.EditText
+
+  loadingActivity:
+    - com.alipay.mobile.nebulacore.ui.H5Activity
+
+  text:
+    - 返回
+    - 拨打银行电话
+# 特定步骤
+tasks:
+  -
+    name: login
+    steps:
+      -
+        # action 枚举: click, input, back, slide {top, right, bottom, left}
+        action: click
+        # params 列举参数
+        params: xpath:://
+appium:
+  appPath: /Users/bingo/Downloads/Alipay_993092805_Release_201609281548.apk
+  host: 127.0.0.1
+  port: 4723
+  # 等待延时
+  interval: 3
+  platformName: android
+  serialsNumber: PBV5T16425011102
+  processName: com.eg.android.AlipayGphone
+# 触发事件，先搁置，暂时没有特别好的方法
+# trigger:
+record:
+  videoRecordDir: /Users/bingo/Desktop/Record/videos
+  screenCaptureDir: /Users/bingo/Desktop/Record/captures

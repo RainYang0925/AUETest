@@ -1,0 +1,26 @@
+apply plugin: 'java'
+apply plugin: 'maven'
+
+group = 'com.alipay.android.aue'
+version = '1.0-SNAPSHOT'
+
+description = """"""
+
+sourceCompatibility = 1.6
+targetCompatibility = 1.6
+
+
+
+repositories {
+        
+     maven { url "http://repo.maven.apache.org/maven2" }
+     maven { url "http://uk.maven.org/maven2" }
+}
+dependencies {
+    compile group: 'junit', name: 'junit', version:'4.12'
+    compile group: 'io.appium', name: 'java-client', version:'4.1.2'
+    compile group: 'dom4j', name: 'dom4j', version:'1.6.1'
+    compile group: 'log4j', name: 'log4j', version:'1.2.17'
+    compile group: 'org.yaml', name: 'snakeyaml', version:'1.17'
+    compile group: 'it.unimi.dsi', name: 'fastutil', version:'7.0.13'
+}
